@@ -49,15 +49,17 @@ Michał Burdukiewicz:
  - Stowarzyszenie Wrocławskich Użytkowników R (stwur.pl),
  - Fundacja Why R? (whyr.pl).
 
-Materiały: https://github.com/michbur/WizualizacjaDanych2021-2022L
+Materiały: https://github.com/michbur/WizualizacjaDanych2022-2023Z
 
 Riseup: https://pad.riseup.net/p/WWD-tmp
 
 Mail: michalburdukiewicz@gmail.com
 
+Ankieta: https://forms.gle/gqLgZ67pTktxBCyd9
+
 ## Materiały
 
-<img src="img/repo.png" width="500px" class="center">
+<img src="img/repo.png" width="700px" class="center">
 
 
 ## Literatura
@@ -754,5 +756,11 @@ Więcej o VisQualu:
  
 Autorzy: Jan Sawicki (Politechnika Warszawska), Michał Burdukiewicz.
 
+## Kontakt
 
+Materiały: https://github.com/michbur/WizualizacjaDanych2022-2023Z
+
+Mail: michalburdukiewicz@gmail.com
+
+Ankieta: https://forms.gle/gqLgZ67pTktxBCyd9
 
