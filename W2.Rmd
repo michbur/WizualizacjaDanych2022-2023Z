@@ -40,7 +40,7 @@ theme_set(theme_bw())  # pre-set the bw theme.
 
 ## Przypomnienie
 
-Materiały: https://github.com/michbur/WizualizacjaDanych2021-2022L
+Materiały: https://github.com/michbur/WizualizacjaDanych2022-2023Z
 
 Riseup: https://pad.riseup.net/p/WWD-tmp
 
@@ -322,6 +322,12 @@ chordDiagram(mat)
 ## Wykres strunowy
 
 Wykres strunowy (chord diagram): przedstawienie zależności/przepływów między wieloma parami stanów.
+
+## Scrollytelling
+
+Portmanteau "storytelling" i "scrolling" - angażujące przedstawienia treści, gdzie narracja zależy od scrollowania.
+
+Przykłady: https://pudding.cool/2018/08/pockets/
 
 # Podsumowanie
 
