@@ -89,8 +89,10 @@ liczba uzyskanych praw jazdy
 group_by(dat, month, year, voivodeship) %>% 
     summarise(total = sum(count)) %>% 
     filter(voivodeship == "WOJ. MAZOWIECKIE") %>% 
-    ggplot(aes(x = year, y = as.factor(month), fill = total)) +
-    geom_tile() +
+    ggplot(aes(x = year, y = as.factor(month), fill = total, label = total)) +
+    geom_tile(color = "navyblue") +
+    geom_text(color = "red") +
+    scale_fill_gradient(low = "white", high = "black") +
     scale_y_discrete("Month") +
     ggtitle("Mazowieckie")
 ```
@@ -111,7 +113,7 @@ liczba osób które uzyskały prawo jazdy w danym wieku, z podziałem na płec
 group_by(dat, age, sex) %>% 
     summarise(total = sum(count)) %>% 
     ungroup() %>% 
-    mutate(age_bin = cut(age, breaks = quantile(age, probs = seq(0, 1, 0.2)), include.lowest = TRUE, ordered_result = TRUE)) %>% 
+    mutate(age_bin = cut(age, breaks = round(quantile(age, probs = seq(0, 1, 0.2)), 0), include.lowest = TRUE, ordered_result = TRUE)) %>% 
     ggplot(aes(x = age, y = total, color = sex, shape = sex)) +
     geom_point() +
     facet_wrap(~ age_bin, scales = "free")
@@ -163,7 +165,8 @@ group_by(dat, year, sex, voivodeship) %>%
     summarise(total = sum(count)) %>% 
     ggplot(aes(x = year, y = total, fill = sex)) +
     geom_col(position = "dodge") +
-    facet_wrap(~ voivodeship) 
+    facet_wrap(~ voivodeship, ncol = 3) +
+    theme(legend.position = "bottom")
 ```
 
 Cel: pokazać liczbę uzyskanych praw jazdy dla poszczególnych województw w zależności od płci i roku.
